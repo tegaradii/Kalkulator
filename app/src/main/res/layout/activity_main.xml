@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="32dp"
+        android:text="15,000 - 7,500"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:alpha="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:text="7,500"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txt_view" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizantal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizantal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizantal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizantal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizantal5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizantal6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_ac"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal2"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical0"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical1"
+        android:text="@string/ac_btn"
+        android:background="@drawable/rounded_1"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_persen"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal2"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical2"
+        android:text="@string/btn_persen"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_bagi"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal2"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical2"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical3"
+        android:text="@string/btn_bagi"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_kali"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal2"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal1"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical3"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical4"
+        android:text="@string/btn_kalii"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_tujuh"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal3"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal2"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical0"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical1"
+        android:text="@string/btn_7"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_delapan"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal3"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal2"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical2"
+        android:text="@string/btn_8"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_sembilan"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal3"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal2"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical2"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical3"
+        android:text="@string/btn_9"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_tambah"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal3"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal2"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical3"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical4"
+        android:text="@string/btn_tambah"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_empat"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal4"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal3"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical0"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical1"
+        android:text="@string/btn_4"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_lima"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal4"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal3"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical2"
+        android:text="@string/btn_5"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_enam"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal4"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal3"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical2"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical3"
+        android:text="@string/btn_6"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_kurang"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal4"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal3"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical3"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical4"
+        android:text="@string/btn_kurang"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_satu"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal5"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal4"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical0"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical1"
+        android:text="@string/btn_1"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_dua"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal5"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal4"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical1"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical2"
+        android:text="@string/btn_2"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_tiga"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal5"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal4"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical2"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical3"
+        android:text="@string/btn_3"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_samadengan"
+        android:layout_width="98dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal6"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal4"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical3"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical4"
+        android:text="@string/btn_samadengan"
+        android:background="@drawable/rounded_1"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_nol"
+        android:layout_width="196dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal6"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal5"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical0"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical2"
+        android:text="@string/btn_0"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tombol_titik"
+        android:layout_width="98dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizantal6"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizantal5"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical2"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical3"
+        android:text="@string/btn_koma"
+        android:background="@drawable/rounded"
+        android:textSize="32dp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
